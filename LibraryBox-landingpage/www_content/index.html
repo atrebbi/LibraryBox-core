@@ -4,8 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
 	<meta http-equiv="cache-control" content="no-cache">
+
 	<title>LibraryBox 2.1</title>
 	<link rel="icon" href="faviconM.ico">
+
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.css">
 	<link rel="stylesheet" href="css/font.css">
@@ -36,8 +38,36 @@
 			margin-left: 5px;
 			}
 			
-		
+			#Content_Home{
+				/*visibility: visible;*/
+				display: block;
+			}
+
+			#Content_Help{
+					/*visibility: hidden;*/
+					display: none;
+			}
+		 
 	</style>
+	<script>
+		function show_Home(){
+			var el1= document.getElementById("Content_Home");
+			var el2= document.getElementById("Content_Help");
+			//el1.style.visibility="visible";
+			//el2.style.visibility="hidden";
+			el1.style.display="block";
+			el2.style.display="none";
+		}
+		function show_Help(){
+			var el1= document.getElementById("Content_Home");
+			var el2= document.getElementById("Content_Help");
+			//el1.style.visibility="hidden";
+			//el2.style.visibility="visible";
+			el1.style.display="none";
+			el2.style.display="block";
+
+		}
+	</script>
 </head>
 <body>
 
@@ -55,13 +85,13 @@
         </span>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a data-l10n-id="commonNavbarHome" href="/" class="active" style="color: #333">Home</a></li>
+            <li><a data-l10n-id="commonNavbarHome" href="#" class="active" style="color: #333" onclick="show_Home(); return false;">Home</a></li>
 			<li><a data-l10n-id="commonNavbarText" href="/Shared/text/" style="color: #333">Storia</a></li>
 						<li><a data-l10n-id="commonNavbarText" href="/Shared/text/" style="color: #333">Sale</a></li>
 						<li><a data-l10n-id="commonNavbarAudio" href="/Shared/audio/" style="color: #333">Piano di sicurezza</a></li>
 						<li><a data-l10n-id="commonNavbarVideo" href="/Shared/video/" style="color: #333">Contatti</a></li>
 						<li><a data-l10n-id="commonNavbarVideo" href="/Shared/video/" style="color: #333">Libro firme</a></li>
-						<li><a data-l10n-id="commonNavbarVideo" href="/Shared/video/" style="color: #333">Help</a></li>
+						<li><a data-l10n-id="commonNavbarVideo" href="#" style="color: #333" onclick="show_Help(); return false;">Help</a></li>
 						<li>
 
 								<a data-l10n-id="commonNavbarVideo" href="/Shared/video/" style="color: #333">
@@ -95,7 +125,7 @@
     </div>
 
 
-<div class="container">
+<div class="container" id="Content_Home">
 
 	<div class="lb-content">
 		<section id="content">
@@ -140,6 +170,29 @@
 					</div>
 				</div>
 			</div>
+			</section>
+			</div>
+			</div>
+
+
+			<div class="container" id="Content_Help">
+
+				<div class="lb-content">
+					<section id="content">
+				<!-- visitor counter --> 
+						<div id="welcome">
+							<div class="container">
+								<h1 data-l10n-id="indexContentWelcome"><img src="img/lbx-logo-small.png">Help!</h1>
+								<p data-l10n-id="indexContentWelcomeDescription">Una mostra da non perdere dedicata a una delle figure più eclettiche della cultura del Novecento italiano: Emilio Tadini. Un percorso espositivo inedito che unisce pittura e scrittura dell’autore con il contributo fotografico di PhotoMilano che arricchisce la mostra di suggestioni visive che calano il pensiero di Tadini nel contemporaneo.</p>
+								
+							</div>
+						</div>
+						
+			
+							</div>
+				</div>
+
+
 		</section>
 	<div class="starter-template">
 
