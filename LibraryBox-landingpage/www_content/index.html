@@ -47,25 +47,140 @@
 					/*visibility: hidden;*/
 					display: none;
 			}
+			#Content_Storia{
+					/*visibility: hidden;*/
+					display: none;
+			}
+			#Content_Sale{
+					/*visibility: hidden;*/
+					display: none;
+			}
+			#Content_PianoSicurezza{
+					/*visibility: hidden;*/
+					display: none;
+			}
+			#Content_Contatti{
+					/*visibility: hidden;*/
+					display: none;
+			}
+			#Content_LibroFirme{
+					/*visibility: hidden;*/
+					display: none;
+			}
 		 
 	</style>
 	<script>
 		function show_Home(){
 			var el1= document.getElementById("Content_Home");
 			var el2= document.getElementById("Content_Help");
-			//el1.style.visibility="visible";
-			//el2.style.visibility="hidden";
+			var el3= document.getElementById("Content_Storia");
+			var el4= document.getElementById("Content_Sale");
+			var el5= document.getElementById("Content_PianoSicurezza");
+			var el6= document.getElementById("Content_Contatti");
+			var el7= document.getElementById("Content_LibroFirme");
 			el1.style.display="block";
+			el4.style.display="none";
+			el3.style.display="none";
 			el2.style.display="none";
+			el5.style.display="none";
+			el6.style.display="none";
+			el7.style.display="none";
 		}
 		function show_Help(){
 			var el1= document.getElementById("Content_Home");
 			var el2= document.getElementById("Content_Help");
-			//el1.style.visibility="hidden";
-			//el2.style.visibility="visible";
+			var el3= document.getElementById("Content_Storia");
+			var el4= document.getElementById("Content_Sale");
+			var el5= document.getElementById("Content_PianoSicurezza");
+			var el6= document.getElementById("Content_Contatti");
+			var el7= document.getElementById("Content_LibroFirme");
 			el1.style.display="none";
+			el5.style.display="none";
+			el4.style.display="none";
+			el3.style.display="none";
 			el2.style.display="block";
-
+			el6.style.display="none";
+			el7.style.display="none";
+		}
+		function show_Storia(){
+			var el1= document.getElementById("Content_Home");
+			var el2= document.getElementById("Content_Help");
+			var el3= document.getElementById("Content_Storia");
+			var el4= document.getElementById("Content_Sale");
+			var el5= document.getElementById("Content_PianoSicurezza");
+			var el6= document.getElementById("Content_Contatti");
+			var el7= document.getElementById("Content_LibroFirme");
+			el1.style.display="none";
+			el2.style.display="none";
+			el3.style.display="block";
+			el4.style.display="none";
+			el5.style.display="none";
+			el6.style.display="none";
+			el7.style.display="none";
+		}
+		function show_Sale(){
+			var el1= document.getElementById("Content_Home");
+			var el2= document.getElementById("Content_Help");
+			var el3= document.getElementById("Content_Storia");
+			var el4= document.getElementById("Content_Sale");
+			var el5= document.getElementById("Content_PianoSicurezza");
+			var el6= document.getElementById("Content_Contatti");
+			var el7= document.getElementById("Content_LibroFirme");
+			el1.style.display="none";
+			el2.style.display="none";
+			el3.style.display="none";
+			el4.style.display="block";
+			el5.style.display="none";
+			el6.style.display="none";
+			el7.style.display="none";
+		}
+		function show_PianoSicurezza(){
+			var el1= document.getElementById("Content_Home");
+			var el2= document.getElementById("Content_Help");
+			var el3= document.getElementById("Content_Storia");
+			var el4= document.getElementById("Content_Sale");
+			var el5= document.getElementById("Content_PianoSicurezza");
+			var el6= document.getElementById("Content_Contatti");
+			var el7= document.getElementById("Content_LibroFirme");
+			el1.style.display="none";
+			el2.style.display="none";
+			el3.style.display="none";
+			el4.style.display="none";
+			el5.style.display="block";
+			el6.style.display="none";
+			el7.style.display="none";
+		}
+		function show_Contatti(){
+			var el1= document.getElementById("Content_Home");
+			var el2= document.getElementById("Content_Help");
+			var el3= document.getElementById("Content_Storia");
+			var el4= document.getElementById("Content_Sale");
+			var el5= document.getElementById("Content_PianoSicurezza");
+			var el6= document.getElementById("Content_Contatti");
+			var el7= document.getElementById("Content_LibroFirme");
+			el1.style.display="none";
+			el2.style.display="none";
+			el3.style.display="none";
+			el4.style.display="none";
+			el5.style.display="none";
+			el6.style.display="block";
+			el7.style.display="none";
+		}
+		function show_LibroFirme(){
+			var el1= document.getElementById("Content_Home");
+			var el2= document.getElementById("Content_Help");
+			var el3= document.getElementById("Content_Storia");
+			var el4= document.getElementById("Content_Sale");
+			var el5= document.getElementById("Content_PianoSicurezza");
+			var el6= document.getElementById("Content_Contatti");
+			var el7= document.getElementById("Content_LibroFirme");
+			el1.style.display="none";
+			el2.style.display="none";
+			el3.style.display="none";
+			el4.style.display="none";
+			el5.style.display="none";
+			el6.style.display="none";
+			el7.style.display="block";
 		}
 	</script>
 </head>
@@ -86,11 +201,11 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a data-l10n-id="commonNavbarHome" href="#" class="active" style="color: #333" onclick="show_Home(); return false;">Home</a></li>
-			<li><a data-l10n-id="commonNavbarText" href="/Shared/text/" style="color: #333">Storia</a></li>
-						<li><a data-l10n-id="commonNavbarText" href="/Shared/text/" style="color: #333">Sale</a></li>
-						<li><a data-l10n-id="commonNavbarAudio" href="/Shared/audio/" style="color: #333">Piano di sicurezza</a></li>
-						<li><a data-l10n-id="commonNavbarVideo" href="/Shared/video/" style="color: #333">Contatti</a></li>
-						<li><a data-l10n-id="commonNavbarVideo" href="/Shared/video/" style="color: #333">Libro firme</a></li>
+			<li><a data-l10n-id="commonNavbarText" href="#" style="color: #333" onclick="show_Storia(); return false">Storia</a></li>
+						<li><a data-l10n-id="commonNavbarText" href="#" style="color: #333" onclick="show_Sale(); return false">Sale</a></li>
+						<li><a data-l10n-id="commonNavbarAudio" href="#" style="color: #333" onclick="show_PianoSicurezza(); return false">Piano di sicurezza</a></li>
+						<li><a data-l10n-id="commonNavbarVideo" href="#" style="color: #333" onclick="show_Contatti(); return false">Contatti</a></li>
+						<li><a data-l10n-id="commonNavbarVideo" href="#" style="color: #333" onclick="show_LibroFirme(); return false">Libro firme</a></li>
 						<li><a data-l10n-id="commonNavbarVideo" href="#" style="color: #333" onclick="show_Help(); return false;">Help</a></li>
 						<li>
 
@@ -188,12 +303,83 @@
 							</div>
 						</div>
 						
-			
-							</div>
+					</section>
 				</div>
+			</div>
 
+			<div class="container" id="Content_Storia">
 
-		</section>
+				<div class="lb-content">
+					<section id="content">
+				<!-- visitor counter --> 
+						<div id="welcome">
+							<div class="container">
+								<h1 data-l10n-id="indexContentWelcome"><img src="img/lbx-logo-small.png">la nostra storia!</h1>
+								<p data-l10n-id="indexContentWelcomeDescription">Una mostra da non perdere dedicata a una delle figure più eclettiche della cultura del Novecento italiano: Emilio Tadini. Un percorso espositivo inedito che unisce pittura e scrittura dell’autore con il contributo fotografico di PhotoMilano che arricchisce la mostra di suggestioni visive che calano il pensiero di Tadini nel contemporaneo.</p>
+							</div>
+						</div>	
+					</section>
+				</div>
+			</div>
+
+			<div class="container" id="Content_Sale">
+
+				<div class="lb-content">
+					<section id="content">
+				<!-- visitor counter --> 
+						<div id="welcome">
+							<div class="container">
+								<h1 data-l10n-id="indexContentWelcome"><img src="img/lbx-logo-small.png">la nostre sale!</h1>
+								<p data-l10n-id="indexContentWelcomeDescription">Una mostra da non perdere dedicata a una delle figure più eclettiche della cultura del Novecento italiano: Emilio Tadini. Un percorso espositivo inedito che unisce pittura e scrittura dell’autore con il contributo fotografico di PhotoMilano che arricchisce la mostra di suggestioni visive che calano il pensiero di Tadini nel contemporaneo.</p>
+							</div>
+						</div>	
+					</section>
+				</div>
+			</div>
+			<div class="container" id="Content_PianoSicurezza">
+
+				<div class="lb-content">
+					<section id="content">
+				<!-- visitor counter --> 
+						<div id="welcome">
+							<div class="container">
+								<h1 data-l10n-id="indexContentWelcome"><img src="img/lbx-logo-small.png">Piano sicurezza</h1>
+								<p data-l10n-id="indexContentWelcomeDescription">Una mostra da non perdere dedicata a una delle figure più eclettiche della cultura del Novecento italiano: Emilio Tadini. Un percorso espositivo inedito che unisce pittura e scrittura dell’autore con il contributo fotografico di PhotoMilano che arricchisce la mostra di suggestioni visive che calano il pensiero di Tadini nel contemporaneo.</p>
+							</div>
+						</div>	
+					</section>
+				</div>
+			</div>
+			
+			<div class="container" id="Content_Contatti">
+
+				<div class="lb-content">
+					<section id="content">
+				<!-- visitor counter --> 
+						<div id="welcome">
+							<div class="container">
+								<h1 data-l10n-id="indexContentWelcome"><img src="img/lbx-logo-small.png">Contatti</h1>
+								<p data-l10n-id="indexContentWelcomeDescription">Una mostra da non perdere dedicata a una delle figure più eclettiche della cultura del Novecento italiano: Emilio Tadini. Un percorso espositivo inedito che unisce pittura e scrittura dell’autore con il contributo fotografico di PhotoMilano che arricchisce la mostra di suggestioni visive che calano il pensiero di Tadini nel contemporaneo.</p>
+							</div>
+						</div>	
+					</section>
+				</div>
+			</div>
+			<div class="container" id="Content_LibroFirme">
+
+				<div class="lb-content">
+					<section id="content">
+				<!-- visitor counter --> 
+						<div id="welcome">
+							<div class="container">
+								<h1 data-l10n-id="indexContentWelcome"><img src="img/lbx-logo-small.png">Libro firme</h1>
+								<p data-l10n-id="indexContentWelcomeDescription">Una mostra da non perdere dedicata a una delle figure più eclettiche della cultura del Novecento italiano: Emilio Tadini. Un percorso espositivo inedito che unisce pittura e scrittura dell’autore con il contributo fotografico di PhotoMilano che arricchisce la mostra di suggestioni visive che calano il pensiero di Tadini nel contemporaneo.</p>
+							</div>
+						</div>	
+					</section>
+				</div>
+			</div>
+
 	<div class="starter-template">
 
 	<footer id="footer">
